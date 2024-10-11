@@ -1,0 +1,129 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-color: #0f2a20;  /* Dark green background */
+    color: #e1d7c6;  /* Light beige text */
+    font-family: 'Merriweather', serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #183e2d;
+    color: #e1d7c6;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f1e6d2;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    color: #d4c4aa;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    color: #e1d7c6;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #cba25f;
+    color: #183e2d;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #b68a44;
+}
+
+/* Character section */
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 50px 20px;
+    background: #1d3a2d;
+}
+
+.character-card {
+    background-color: #3e5c4d;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.character-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Carousel */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #2a4b3d;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 60%;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+#prev, #next {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #e1d7c6;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #183e2d;
+    color: #e1d7c6;
+    text-align: center;
+    padding: 20px;
+}
